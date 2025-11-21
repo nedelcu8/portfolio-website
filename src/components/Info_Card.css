@@ -1,0 +1,8 @@
+.container-card {
+  background: #1a1a1a; /* dark glossy background */
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
