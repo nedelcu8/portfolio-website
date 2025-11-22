@@ -1,7 +1,7 @@
-import Avatar from "./components/Avatar";
+import Avatar from "./components/Avatar/Avatar";
 import portrait from "./assets/panoramic_view.jpeg";
+import Info_Card from "./components/Info_Card/Info_Card";
 import "./App.css";
-import Info_Card from "./components/Info_Card";
 
 function App() {
   return (
