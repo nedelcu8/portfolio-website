@@ -1,14 +1,16 @@
 import "./Info_Card.css";
-import Carousel from "../Tech_Carousel/Carousel";
 function Info_Card() {
   return (
     <div className="info-card">
       <div className="container-card">
         <div className="title">Bogdan</div>
-        <div className="description">I am a bla bla blasda asdadasd sad asd a sadasd a</div>
-      
-        <Carousel/>
+        <div className="description">
+            Hello I am Bogdan a self taught DevOps engineer with a passion for learning and descovering new tehnologies
+            I have a stong drive to lean new skills and improve my existing ones.
+        </div>
+        
       </div>
+      
 
     </div>
     
