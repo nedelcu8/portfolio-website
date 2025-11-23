@@ -10,9 +10,10 @@ function Info_Card() {
             <ul>
               <li>🧱 Infrastructure and automation </li>
               <li>🏗️ Building scalable systems</li>
-              <li>♾️ Continuous iintegration and deployment</li>
+              <li>♾️ Continuous integration and deployment</li>
               <li>💡 Creating software solutions</li>
             </ul>
+
         </div>
 
         
