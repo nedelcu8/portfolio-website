@@ -1,4 +1,8 @@
 import "./Info_Card.css";
+import Social_Card from "../Social_Card/Social";
+import Github from "../../assets/github.png";
+import Linkedin from "../../assets/linkedin-icon.png";
+
 function Info_Card() {
   return (
     <div className="info-card">
@@ -13,13 +17,24 @@ function Info_Card() {
               <li>♾️ Continuous integration and deployment</li>
               <li>💡 Creating software solutions</li>
             </ul>
-
+            
+          </div>
+        <div className="social">
+            <Social_Card 
+              url={"https://www.linkedin.com/in/macovei-mihai-bogdan-8922571b9/"}
+              icon={Github}
+              alt={"LinkedIn Icon"}
+            />
+            <Social_Card 
+              url={"https://github.com/nedelcu8"}
+              icon={Linkedin}
+              alt={"GitHub Icon"}
+            />
+      </div>
         </div>
-
+    
         
       </div>
-    
-    </div>
     
   );
 }

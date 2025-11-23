@@ -3,4 +3,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+}
+.vertical-divider {
+  width: 5px;
+  height: 300px; /* or 100% */
+  background: radial-gradient(circle, white 0%, transparent 70%);
+  mask-image: linear-gradient(to right, transparent, black 50%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 50%, transparent);
+  margin: 0 50px;
 }

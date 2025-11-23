@@ -1,0 +1,16 @@
+    .social-icon {
+    width: 45px;
+    height: 40px;
+    margin: 0 10px;
+    padding: 4px;
+    transition: transform 0.3s;
+    border: 2px solid white;
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}

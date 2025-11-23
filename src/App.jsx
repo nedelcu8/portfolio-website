@@ -3,6 +3,7 @@ import portrait from "./assets/panoramic_view.jpeg";
 import Info_Card from "./components/Info_Card/Info_Card";
 import Carousel from "./components/Tech_Carousel/Carousel";
 import Loading from "./components/Loading/Loading";
+import Devops from "./components/Devops_card/Devops";
 import "./App.css";
 
 
@@ -12,6 +13,12 @@ function App() {
       <Avatar src={portrait} alt="My portrait" size={{width: 800, height: 400 }} />
       <Info_Card />
       <Carousel />
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <Devops />
+        <div className="vertical-divider" />
+        <Devops />
+      </div>
+
       <Loading />
     </div>
   );
