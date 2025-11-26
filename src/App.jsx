@@ -16,6 +16,7 @@ function App() {
       <Carousel />
       <Loading />
       <div style={{ display: "flex", alignItems: "center" , maxWidth: "80%" }}>
+        
         <Devops />
         <div className="vertical-divider" />
         <Backend />

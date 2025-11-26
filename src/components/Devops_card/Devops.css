@@ -84,18 +84,11 @@
   
 
 }
-.terraform-section {
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: rgb(0, 0, 0);
-  margin-bottom: 20px;
-  width: 100%;
-}
+
 .modal-button {
   background-color: #3c53d1;
   color: white;
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   border: none;

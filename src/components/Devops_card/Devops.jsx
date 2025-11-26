@@ -2,11 +2,12 @@ import './Devops.css';
 import DevOpsImage from '../../assets/devops.png';
 import { useEffect, useRef, useState } from 'react';
 import { Modal } from '@mui/material';
+
 import ProjectCard from '../Project_Card/ProjectCard';
 import TerraormProj from '../../assets/terraform-proj.png';
 import K8sProj from '../../assets/k8s-proj.svg';
 import AnsibleProj from '../../assets/ansible-proj.svg';
-
+import GrafanaProj from '../../assets/grafana-proj.svg';
 
 export default function Devops({ count = 50 }) {
   const cardRef = useRef(null);
@@ -101,9 +102,14 @@ export default function Devops({ count = 50 }) {
             imageSrc={K8sProj}
           />
           <ProjectCard
-            title="Ansbiel configurations for server management"
-            description="Terraform creation installed ansible ssh key and from there ansible configres each VM with users and packages."  
+            title="Ansible configurations for server management"
+            description="Terraform creates installed ansible ssh key and from there ansible configures each VM with users and packages."  
             imageSrc={AnsibleProj}
+          />
+          <ProjectCard
+            title="Grafana , Loki and Prometheus monitoring setup"
+            description="Setup of monitoring stack using Grafana, Loki, and Prometheus to visualize and analyze system metrics and logs effectively."  
+            imageSrc={GrafanaProj}
           />
           
         </div>

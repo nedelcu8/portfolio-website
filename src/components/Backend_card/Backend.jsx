@@ -1,11 +1,15 @@
 import './Backend.css';
 import Software from '../../assets/software.png';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { Modal } from '@mui/material';
+import ProjectCard from '../Project_Card/ProjectCard';
 
 export default function Backend({ count = 50 }) {
   const cardRef = useRef(null);
   const particlesRef = useRef(null);
   const createdNodesRef = useRef([]);
+  const [isVisible, setIsVisible] = useState(false);
+
 
   useEffect(() => {
     const card = cardRef.current;
@@ -56,7 +60,7 @@ export default function Backend({ count = 50 }) {
   }, [count]);
 
   return (
-    <div ref={cardRef} className="backend-card">
+    <div ref={cardRef} className="backend-card" onClick={() => setIsVisible(true)}>
       <div ref={particlesRef} className="particles" aria-hidden="true" />
       <div className="backend-title">Backend</div>
       <div
@@ -69,6 +73,23 @@ export default function Backend({ count = 50 }) {
           marginBottom: '10px',
         }}
       />
+      <Modal open={isVisible} 
+      onClose={() => setIsVisible(false)}
+      onRequestClose={() => setIsVisible(false)}
+      className="backend-modal"
+      >
+        <div className="modal-content">
+          <button onClick={(e) => { e.stopPropagation(); setIsVisible(false); }}
+          className='modal-button'
+          >
+          Close
+          </button>
+          <h2 >Backend Projects 🔧</h2>
+          <ProjectCard
+            
+          />
+        </div>
+      </Modal>
     </div>
   );
 }
