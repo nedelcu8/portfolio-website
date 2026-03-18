@@ -21,15 +21,16 @@ function Info_Card() {
           </div>
         <div className="social">
             <Social_Card 
-              url={"https://github.com/nedelcu8"}
-              icon={Github}
-              alt={"GitHub Icon"}
-            />
-            <Social_Card 
               url={"https://www.linkedin.com/in/macovei-mihai-bogdan-8922571b9/"}
               icon={Linkedin}
               alt={"LinkedIn Icon"}
             />
+            <Social_Card 
+              url={"https://github.com/nedelcu8"}
+              icon={Github}
+              alt={"GitHub Icon"}
+            />
+            
       </div>
         </div>
     
